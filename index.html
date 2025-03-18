@@ -3,19 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Namaste React 🙏</title>
+    <title>Learning React</title>
   </head>
   <body>
     <div id="root">
-      <!-- <h3>Hello World</h3> -->
-      <!-- 
-      <script>
-        let heading = document.createElement("h1");
-        heading.innerHTML = "Hello world From JS";
+      <!-- With HTML -->
+      <h1>Hello World Form, HTML5</h1>
 
+      <script>
+        // With JS
+        const heading = document.createElement("h1");
+        heading.innerHTML = "hello Wolrd From JS";
         const root = document.getElementById("root");
         root.appendChild(heading);
-      </script> -->
+      </script>
+
       <script
         crossorigin
         src="https://unpkg.com/react@18/umd/react.development.js"
@@ -26,11 +28,10 @@
       ></script>
 
       <script>
-        const heading = React.createElement("h1", {}, "Hello World From React");
-
-        const root = ReactDOM.createRoot(document.getElementById("root"));
-
-        root.render(heading);
+        // Core React Way
+        const _heading = React.createElement("h1", {}, "Hello World From react");
+        const _root = ReactDOM.createRoot(document.getElementById("root"));
+        _root.render(_heading);
       </script>
     </div>
   </body>
