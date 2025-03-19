@@ -1,29 +1,12 @@
-/*
-<div id="Parent">
-<div id="Child">
-<h1></h1>
-</div>
-</div>
-*/
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-// const _heading = React.createElement(
-//   "h1",
-//   { id: "heading", xyz: "abc" },
-//   "Hello World From react"
-// );
-// const _root = ReactDOM.createRoot(document.getElementById("root"));
-// _root.render(_heading);
+// React Element
 
-const parent = React.createElement(
-  "div",
-  { id: "Parent" },
-  React.createElement(
-    "div",
-    { id: "child" },
-    React.createElement("h1", {}, "I'm an h1 tag")
-  )
-);
+const App = () => {
+  const heading = <h1>This is the H1 Heading</h1>;
 
-const _root = ReactDOM.createRoot(document.getElementById("root"));
+  return <div>{heading}</div>;
+};
 
-_root.render(parent);
+export default App;

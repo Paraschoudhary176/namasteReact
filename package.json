@@ -1,0 +1,23 @@
+{
+  "name": "inception",
+  "version": "1.0.0",
+  "description": "",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest",
+    "start": "npx parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.14.0"
+  },
+  "dependencies": {
+    "react-dom": "^19.0.0"
+  },
+  "browserslist": [
+    "last 2 versions pf chrome"
+  ]
+}
